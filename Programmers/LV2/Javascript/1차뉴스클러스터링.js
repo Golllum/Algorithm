@@ -10,7 +10,7 @@ function solution(str1, str2) {
         // A의 원소값과 같은 값을 가진 B의 원소가 있다면
         // 교집합수(AnBcnt) 증가시키고, 해당 B원소값을 대문자로 변경
         // 대문자로 변경한 값은 합집합 생성 시, 제외시킨다
-        let findIdx = B.findIndex(b_element => b_element === a_element);
+        let findIdx = B.indexOf(a_element);
         
         if(findIdx > -1){
             B[findIdx] = B[findIdx].toUpperCase();
