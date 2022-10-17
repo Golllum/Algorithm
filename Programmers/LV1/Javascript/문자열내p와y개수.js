@@ -21,7 +21,7 @@ function solution(s){
         answer = false;
     }
     
-    // 두번째 솔루션 (정규식)
+    // 두번째 솔루션 (regExp)
     // string.match() + regExp -> p, y count
     let pCnt2 = ( s.toString().match(/p/gi) || [] ).length;
     let yCnt2 = ( s.toString().match(/y/gi) || [] ).length;
